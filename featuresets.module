@@ -1,0 +1,21 @@
+<?php
+// based on https://drupal.org/node/1064472
+
+/* Feature Sets
+ *
+* This module extends the Features module by creating commonly-held featuresets
+* which can be exported in order to (1) compact feature modules, (2) provide a
+* single location to define some fields across multiple content types, and
+* (3) make it easier to manage field instance settings.
+*/
+
+/* Necessary Aspects
+ *
+* 1. Integration with Features export/import routine
+* 2. UI to manage feature sets (In Features or Structure)
+* 3. Integration with Features creation UI
+* 4. Integrate with Field_Group
+* 5. Allow creation of a core module to integrate with multiple feature modules
+* 6. Use standard features definition to override settings of shared definition.
+*/
+
