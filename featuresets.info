@@ -1,11 +1,10 @@
 name = "Feature Sets"
-description = "Provides feature setsmanagement for Drupal."
+description = "Provides feature sets management for Drupal."
 core = 7.x
 package = "Features"
 dependencies[] = features
 files[] = featuresets.features.inc
 
-version = "7.x-0.2"
+version = "7.x-0.3"
 core = "7.x"
 project = "featuresets"
-

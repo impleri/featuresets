@@ -19,3 +19,8 @@
 * 6. Use standard features definition to override settings of shared definition.
 */
 
+// Use .info file as features[field_set][entity_bundle] = set
+// Use COMPONENT.features.sets.inc to define sets (can be separate from field_set)
+// Use COMPONENT.features.field_set.inc to define instances related to the feature (can depend on package providing sets)
+
+include_once('featuresets.features.inc');
