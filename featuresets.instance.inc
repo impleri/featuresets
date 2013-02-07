@@ -34,14 +34,14 @@ function field_instance_features_export($data, &$export, $module_name = '') {
       // If the field has not yet been exported, add it
       else {
         $export['features']['field_instance'][$identifier] = $identifier;
-        $export['dependencies'][$field['field_instance']['widget']['module']] = $field['field_instance']['widget']['module'];
-        foreach ($field['field_instance']['display'] as $key => $display) {
+        $export['dependencies'][$field['widget']['module']] = $field['widget']['module'];
+        foreach ($field['display'] as $key => $display) {
           if (isset($display['module'])) {
             $export['dependencies'][$display['module']] = $display['module'];
             // @TODO: handle the pipe to image styles
           }
         }
-        $pipe['field_base'][] = $field['field_config']['field_name'];
+        $pipe['field_base'][] = $field['field_name'];
       }
     }
   }
